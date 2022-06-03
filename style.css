@@ -18,6 +18,10 @@ footer {
   background-image: linear-gradient(rgb(122, 215, 243), rgb(30, 80, 126));
 }
 
+.btn-loading {
+  color:rgb(22, 95, 163);
+ 
+}
 section {
   padding-top: 5rem;
 }
