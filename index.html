@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
+    <!-- css aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
 
@@ -17,7 +19,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Ismail Ramanda Putra</a>
+        <a class="navbar-brand " href="#">ISMAIL RAMANDA PUTRA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,9 +45,9 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/profile.jpg" alt="Ismail Ramanda Putra" class="rounded-circle img-thumbnail" />
+      <img src="img/profile.jpg" alt="Ismail Ramanda Putra" class="rounded-circle img-thumbnail"  />
       <h1 class="display-4">Ismail Ramanda Putra</h1>
-      <p class="lead">Freelancer | Colleger | Web Designer</p>
+      <p class="lead"></p>
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
@@ -55,20 +57,20 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" >
         <div class="row text-center mb-4">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos-offset="250" data-aos="zoom-in-right"  data-aos-duration="1200" >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eius nemo, vero dicta omnis dolorum voluptatibus, cupiditate eligendi reiciendis sed molestias repellendus inventore accusamus et pariatur provident ea quo est saepe
               tempore dolore? Nostrum cupiditate fugit necessitatibus molestias consequuntur nisi.
             </p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5"data-aos-offset="250" data-aos="zoom-in-left"  data-aos-duration="1200"  data-aos-delay="200">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quidem officia nihil doloremque. Quam ab dolore repellendus unde a ex aut perspiciatis assumenda cumque repellat rerum, facere illo recusandae ducimus quae?
               Laborum accusamus labore repellat consectetur libero, nam eius architecto magnam beatae incidunt totam ad!
@@ -94,9 +96,9 @@
             <h2>My Gallery</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row" >
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1200"  >
               <img src="img/gallery/gambar1.png" class="card-img-top" alt="gambar1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -104,7 +106,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1200"  data-aos-delay="100">
               <img src="img/gallery/gambar2.png" class="card-img-top" alt="gambar2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -112,7 +114,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1200"  data-aos-delay="200">
               <img src="img/gallery/gambar3.png" class="card-img-top" alt="gambar3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -120,14 +122,14 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1200"  data-aos-delay="300">
               <img src="img/gallery/gambar4.png" class="card-img-top" alt="gambar4" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="1200"  data-aos-delay="400">
             <div class="card">
               <img src="img/gallery/gambar5.png" class="card-img-top" alt="gambar5" />
               <div class="card-body">
@@ -135,7 +137,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="1200"  data-aos-delay="500">
             <div class="card">
               <img src="img/gallery/gambar6.png" class="card-img-top" alt="gambar6" />
               <div class="card-body">
@@ -157,7 +159,9 @@
 
     <!-- contact -->
     <section id="contact">
-      <div class="container">
+      <div class="container"  data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1200">
         <div class="row text-center">
           <div class="col">
             <h2>Contact Me</h2>
@@ -209,6 +213,22 @@
     <!-- akhir footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, 
+      });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+
+<script>
+  gsap.registerPlugin(TextPlugin);
+  gsap.to('.lead',{duration: 3, delay :1.5, text:'Freelancer | Colleger | Web Designer'});
+  gsap.from ('.jumbotron img', {duration: 3, y:-100, opacity:0 , ease:'elastic'} );
+</script>
 
     
 <script>
