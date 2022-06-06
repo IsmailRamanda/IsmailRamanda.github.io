@@ -3,6 +3,10 @@
 footer {
   background-color: rgb(30, 80, 126);
 }
+
+h2 {
+text-shadow: 2px 2px 3px  rgb(77, 86, 86);
+}
 .jumbotron {
   padding-top: 6rem;
   /* background-image: linear-gradient(#4a81da, #e2edff 80%); */
@@ -13,19 +17,14 @@ footer {
   background-image: url(img/background/bg3.jpg);
 }
 
-.navbar-brand .gradient{
-    h2.heading-gradient {
-    background-image: linear-gradient(90deg, #B92B27, #1565C0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-}
+
 #gallery {
   /* background-image: linear-gradient(#e2edff, #d4e2f8, #abc3eb, #6b96dd); */
   background-image: linear-gradient(rgb(122, 215, 243), rgb(30, 80, 126));
 
 }
 
+/* background */
 #about{
 
   background-image: url(img/background/kiss.png);
@@ -44,7 +43,98 @@ footer {
 
 }
 
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+#gallery a{
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 42, 42);
+}
+
+#gallery a:hover{
+  background-color: rgb(91, 87, 87);
+}
+/* gallery 3D */
+
+.my-box{
+  position: relative;
+  background-image: linear-gradient( rgb(122, 215, 243), rgb(254, 255, 255));
+  border-radius: 10px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform-style: preserve-3d;
+}
+
+.my-box::before{
+  content: 'Gallery';
+  position: absolute;
+  font-size: 4em;
+  color: rgb(38, 36, 36);
+  font-weight: bold;
+  font-style: italic;
+  top: 40px;
+  transition: 0.5s;
+  opacity: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.my-box:hover::before{
+opacity:0.2;
+}
+
+.my-box::after{
+  content: '3D';
+  position: absolute;
+  font-size: 4em;
+  color: rgb(38, 36, 36);
+  font-weight: bold;
+  font-style: italic;
+  top:350px;
+  left:50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  
+}
+
+.my-box:hover::after{
+opacity:0.2;
+}
+
+.nama-gallery{
+  color: rgb(71, 69, 69);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 30px;
+  transform: translate3d(0,0,30px);
+}
+
+.detail-gallery{
+  position: absolute;
+  bottom:10px;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.my-box:hover .detail-gallery{
+  left: 50%;
+  transform: translate3d(-50%,0,80px);
+}
+.my-img{
+ position: absolute;
+ max-width: 250px;
+ top: 50%;
+ left: 50%;
+ transform: translate3d(-50%,-50%,60px);
+ transition: 0.5s;
+}
+
+.my-box:hover .my-img{
+  transform: translate3d(-50%,-50%,60px) scale(1.2);
+}
 
 .btn-loading {
   color:rgb(22, 95, 163);
@@ -95,6 +185,7 @@ section {
   animation-delay: -5s;
   bottom: 20px;
 }
+
 
 @keyframes gerak {
   0% {
