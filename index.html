@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATIK</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="assets/logo.png" alt="Logo Katik">
+            <h2>KATIK</h2>
+        </section>
+        <nav>
+            <a href="index2.html">KELILING SEGITIGA</a>
+            <a href="index.html">LUAS SEGITIGA</a>
+            <section class="menu-toggle">
+                <input type="checkbox" name="" id="" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </section>
+        </nav>
+    </header>
+
+
+    <section class="content">
+        <h1> Luas Segitiga</h1>
+        <article>
+            <img src="assets/Segitiga.png" alt="Luas Segitiga">
+            <section class="description">
+                <p> perhatikan, ada garis yang selalu tegak lurus dari alas segitiga ke titik puncak
+                    segitiga.
+                    Nah, garis AO yang tegak lurus itulah yang kita sebut sebagai tinggi segitiga (t), sedangkan BC
+                    merupakan
+                    alas segitiga (a), dan garis AB, AC merupakan sisi miring segitiga.
+                </p>
+                <ul>
+                    <h4>Rumus Luas Segitiga :</h4>
+                    <li>L = 1/2 x Alas x Tinggi</li>
+                    <li>L = 1/2 x BC x AO</li>
+                    <li>L = 1/2 x a x t</li>
+                </ul>
+            </section>
+
+        </article>
+
+        <main>
+            <h2>Hitung Luas Segitiga</h2>
+            <form action="">
+                <label for="">Alas </label>
+                <input id="alas" type="number" placeholder="Masukan Nilai Alas">
+                <label for="">Tinggi </label>
+                <input id="tinggi" type="number" placeholder="Masukan Nilai Tinggi">
+                <label for="">Hasil</label>
+                <section id="output"></section>
+            </form>
+            <button type="button" type="number" id="hitung">Hitung</button>
+            <button type="button" id="reset">Reset</button>
+        </main>
+    </section>
+
+    <footer>
+        <a href="">creat by Ismail Ramanda</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
